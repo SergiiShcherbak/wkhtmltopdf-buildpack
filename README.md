@@ -36,6 +36,13 @@ If you run into issues when trying to deploy with this buildpack, make sure your
 $ heroku stack
 ```
 
+## Path to the binary
+
+If your Heroku app cannot find the binary, try adding/updating your settings.py
+
+`WKHTMLTOPDF_CMD = './bin/wkhtmltopdf'`
+
+
 If you are on an older stack, you can upgrade to `cedar-14` with:
 
 ```bash
