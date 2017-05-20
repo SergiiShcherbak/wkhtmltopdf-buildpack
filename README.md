@@ -36,6 +36,13 @@ If you run into issues when trying to deploy with this buildpack, make sure your
 $ heroku stack
 ```
 
+## Django apps: Path to the binary
+
+If your Django app cannot find the wkhtmltopdf binary on Heroku, try adding/updating your settings.py
+
+`WKHTMLTOPDF_CMD = './bin/wkhtmltopdf'`
+
+
 If you are on an older stack, you can upgrade to `cedar-14` with:
 
 ```bash
